@@ -1,17 +1,15 @@
 #  Write a Python function to reverses a string if its length is a multiple of 4. 
 
 def reverse_if_multiple_of_4(text):
- 
-  if len(text) % 4 == 0:
-    return text[::-1]
-  else:
-    return text
+    if len(text) % 4 == 0:
+        return text[::-1]
+    else:
+        return text
 
-# Example usage:
-string1 = "hello"
-string2 = "world"
-string3 = "python"
+strings = []
+for i in range(3):
+    string = input(f"Enter string {i+1} :- ")
+    strings.append(string)
 
-print(f"String '{string1}' reversed: {reverse_if_multiple_of_4(string1)}")
-print(f"String '{string2}' reversed: {reverse_if_multiple_of_4(string2)}")
-print(f"String '{string3}' reversed: {reverse_if_multiple_of_4(string3)}")
+for string in strings:
+    print(f"String '{string}' reversed: {reverse_if_multiple_of_4(string)}")

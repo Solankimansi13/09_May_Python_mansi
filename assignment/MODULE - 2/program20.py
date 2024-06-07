@@ -3,7 +3,7 @@
 def longest_word_length(words):
 
   if not words:
-    return 0  # Handle empty list case
+    return 0  # empty 
 
   longest_length = 0
   for word in words:
@@ -11,9 +11,8 @@ def longest_word_length(words):
       longest_length = len(word)
   return longest_length
 
-# input 
 words = input("Enter a list of words : ").split()
 
-# print 
+ 
 longest_length = longest_word_length(words)
 print(f"The length of the longest word is: {longest_length}")

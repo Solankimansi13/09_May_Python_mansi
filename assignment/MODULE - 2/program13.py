@@ -1,14 +1,25 @@
-# Write a Python program to count the number of characters (character frequency) in a string
+# # Write a Python program to count the number of characters (character frequency) in a string
 
-string = input("Enter a string: ")
-char_frequency = {}  # Initialize an empty dictionary
+print("statically")
 
-for char in string:
-  if char in char_frequency:
-    char_frequency[char] += 1  # Increment the count if the character exists
-  else:
-    char_frequency[char] = 1  # Initialize the count to 1 if the character is new
+string = "tops technology"
+print(string.count('t'))
 
-print("Character frequencies:")
-for char, count in char_frequency.items():
-  print(f"'{char}': {count}")
+
+print("\n\n--------take input from the user----------------")
+
+string = input(" Enter a string : ")
+
+print("Enter (1) to perform total length and (2) for count of character.")
+
+choice = input()
+if choice == '1':
+    print("total string length is : ", len(string))
+elif choice == '2':
+    char = input("Enter character to count :- ")
+    if char in string:
+        print(string.count(char))
+    else:
+        print("wrong input.")
+else:
+    print("Invalid choice.")

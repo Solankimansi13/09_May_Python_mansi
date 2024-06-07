@@ -1,10 +1,10 @@
 #  Write a Python program that will return true if the two given integer values are equal or their sum or difference is 5.
 
 
-num1 = int(input("Enter the first number: "))
-num2 = int(input("Enter the second number: "))
-
-if num1 == num2 or num1-num2 == 5 or num1+num2==5:
-  print("True")
+number1 = int(input("Enter number one :- "))
+number2  = int(input("Enterr number two :- "))
+ 
+if number1 == number2 or number2 + number1 == 5 or number1 - number2 == 5:
+    print("True.")
 else:
-  print("False")
+    print("Flase.")

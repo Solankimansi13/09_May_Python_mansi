@@ -1,10 +1,12 @@
 # Write a python program to sum of the first n positive integers. 
 
-n = int(input("Enter a positive integer: "))
+number = int(input("how many number's sum you want to print :- "))
 
-sum = 0  
+i = 1
+sum = 0
+ 
+for i in range(number+1):
+    sum = sum + i
+    i = i + 1
 
-for i in range(1, n + 1):
-  sum += i  
-
-print(f"The sum of the first {n} positive integers is: {sum}")
+print(f"The sum of total is {sum}")

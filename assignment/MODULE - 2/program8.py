@@ -1,8 +1,7 @@
-#Write a Python program to test whether a passed letter is a vowel or not.letter = input("Enter a letter: ")
- 
-letter = input("Enter a letter: ")
+# Write a Python program to test whether a passed letter is a vowel or not.
 
-if letter.lower() in 'aeiou':
-  print(f"{letter} is a vowel.")
+letter = input("Enter a letter :- ")
+if letter in "aeiouAEIOU":
+    print("The letter is Vowel.")
 else:
-  print(f"{letter} is not a vowel.")
+    print("The Letter is not Vowel.")

@@ -1,12 +1,10 @@
 #  Write a Python program to sum of three given integers. However, if two values are equal sum will be zero. 
 
-num1 = int(input("Enter the number1: "))
-num2 = int(input("Enter the number2: "))
-num3 = int(input("Enter the number3: "))
-
-if num1 == num2 or num1 == num3 or num2 == num3:
-  sum = 0
+a = int(input("Enter a number one :- "))
+b = int(input("Enter a number two :- "))
+c =int(input("Enter a number three :- "))
+ 
+if a == b  or b == c or c == a:
+    print("Sum is Zero , because two values are equal.")
 else:
-  sum = num1 + num2 + num3
-
-print("Sum of three numbers:", sum)
+    print("the sum of three number is ", a+b+c)

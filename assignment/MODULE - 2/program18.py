@@ -13,4 +13,4 @@ if len(string) >= 3:
 else:
   pass  # Leave the string unchanged if length is less than 3
 
-print(f"Modified string: {string}")
+print(f"string: {string}")

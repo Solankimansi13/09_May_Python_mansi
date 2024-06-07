@@ -1,16 +1,14 @@
 # Write a Python program to count the occurrences of each word in a given sentence 
 
-sentence = input("Enter a sentence: ")
-words = sentence.split()  
+def count_words():
+    sentence = input("Enter a sentence: ")
+    count = {}
+    for word in sentence.split():
+        word = word.strip('.,!@#$%&*').lower()
+        if word in count:
+            count[word] += 1
+        else:
+            count[word] = 1
+    return count
 
-word_counts = {}  # Initialize an empty dictionary to store word counts
-
-for word in words:
-  if word in word_counts:
-    word_counts[word] += 1  # Increment the count if the word exists
-  else:
-    word_counts[word] = 1  # Initialize the count to 1 if the word is new
-
-print("Word counts:")
-for word, count in word_counts.items():
-  print(f"'{word}': {count}")
+print(count_words())

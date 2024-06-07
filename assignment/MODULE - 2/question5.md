@@ -3,7 +3,7 @@
 
 Purpose:
 
-- there is a list of items (like groceries in your shopping cart). The continue statement will skip this item,  move on to the next one,  It tells Python to immediately jump back to the beginning of the loop, skipping any code that comes after it in the current iteration.
+- this is  a list of items.  The continue statement will skip this item,  move on to the next one,  It tells Python to immediately jump back to the beginning of the loop, skipping any code that comes after it in the current iteration.
 
 Example:    fruits = ["apple", "banana", "cherry", "orange"]
 
