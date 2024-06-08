@@ -1,0 +1,6 @@
+-----------
+2024-06-08 16:22:04.758283
+E-Note title: python notes
+E-note Description: backend developer
+Note Generator: mansi solanki 
+---------------------------
