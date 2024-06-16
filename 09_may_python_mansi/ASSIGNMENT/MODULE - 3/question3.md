@@ -1,3 +1,4 @@
+
 3. Differentiate between append () and extend () methods? 
 
  The append() and extend() methods are use to add element in list.
