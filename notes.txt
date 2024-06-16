@@ -1,0 +1,6 @@
+-----------
+2024-06-16 21:32:23.548348
+E-Note title: python notes
+E-note Description: assignment concept
+Note Generator: mansi
+---------------------------

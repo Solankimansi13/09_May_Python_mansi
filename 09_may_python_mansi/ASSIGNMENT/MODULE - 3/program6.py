@@ -8,6 +8,6 @@ n = 0
 list1=['SOS','121','python','131','tops']
 for i in list1:
     if len(i)>1 and i[0] == i[-1]:
-        print("the given words are = ",i)
+        print(f"the given words are = {i}")
         n = n+1
-print("no. of wrds you want",n)
+print(f"no. of wrds you want is {n}")

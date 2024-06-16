@@ -1,21 +1,24 @@
 #  Write a Python function that takes two lists and returns true if they have at least one common member.
 
-def func1(list1, list2):
-    common = 0
-    for i in list1:
-        if i in list2:
-            common += 1
-    return common
+def check_common(first,second):
+    for i in first:
+        if i in second:
+            return True
+    return False
 
-def get_list():
-    n = int(input("enter how many number you want to print = "))
-    my_list = []
-    for i in range(n):
-        temp = int(input("enter list item = "))
-        my_list.append(temp)
-    return my_list
+length = int(input("Enter List 1 Length = "))
+list1 = []
+for i in range(length):
+    temp = int(input("Enter List 1 Item = "))
+    list1.append(temp)
 
-first = get_list()
-second = get_list()
-total = func1(first, second)
-print("the number of common member is = ", total)
+length = int(input("Enter List 2 Length = "))
+list2 = []
+for i in range(length):
+    temp = int(input("Enter List 2 Item = "))
+    list2.append(temp)
+
+if check_common(list1,list2):
+    print("one comman menber exist between two lists")
+else:
+    print("no coomon menber exist between two list. ")
